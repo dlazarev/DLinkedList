@@ -7,7 +7,7 @@ LList::LList()
     elements_count = 0;
 }
 
-void LList::add(char *d)
+void LList::add(int d)
 {
     DLNode *n = new DLNode(d);
 

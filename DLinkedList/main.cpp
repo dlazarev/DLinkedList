@@ -12,16 +12,14 @@
 int main(int argc, const char * argv[])
 {
 
-    LList a;
-    char str0[] = "first elem";
-    char str1[] = "second elem";
-    char str2[] = "третий элемент";
+    LList li;
+    int a = 3, b =8, c = 2;
     
-    a.add(str0);
-    a.add(str1);
-    a.add(str2);
+    li.add(a);
+    li.add(b);
+    li.add(c);
     
-    a.print();
+    li.print();
     return 0;
 }
 

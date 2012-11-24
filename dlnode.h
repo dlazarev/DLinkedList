@@ -5,11 +5,11 @@ class DLNode
 {
 friend class LList;
 private:
-    char* data;
+    int data;
     DLNode *next;
     DLNode *previous;
 public:
-    DLNode(char* d);
+    DLNode(int d);
     void print();
 };
 
