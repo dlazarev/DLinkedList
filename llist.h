@@ -16,6 +16,7 @@ public:
     unsigned int count() { return elements_count; }
     void print();
     int min();
+    DLNode* byValue(int);
 };
 
 #endif // LLIST_H

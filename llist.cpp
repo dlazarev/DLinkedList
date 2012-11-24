@@ -44,3 +44,14 @@ int LList::min()
     
     return val;
 }
+
+DLNode* LList::byValue(int val)
+{
+    if (elements_count == 0) return NULL;
+    
+    DLNode *tmp = first;
+    while (tmp)
+        if (tmp->data == val) return tmp;
+    
+    return NULL;
+}
