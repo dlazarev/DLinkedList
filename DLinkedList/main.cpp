@@ -13,13 +13,15 @@ int main(int argc, const char * argv[])
 {
 
     LList li;
-    int a = 3, b =8, c = 2;
+    int a = 3, b =8, c = 2, d = 9;
     
     li.add(a);
     li.add(b);
     li.add(c);
+    li.add(d);
     
     li.print();
+    std::cout << "Minimum elements value = " << li.min() << std::endl;
     return 0;
 }
 

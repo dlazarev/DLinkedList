@@ -29,3 +29,18 @@ void LList::print()
         tmp = tmp->next;
     }
 }
+
+int LList::min()
+{
+    if (elements_count == 0) return -1;
+    
+    int val = first->data;
+    DLNode *tmp = first;
+    
+    while (tmp) {
+        if (tmp->data < val) val = tmp->data;
+        tmp = tmp->next;
+    }
+    
+    return val;
+}

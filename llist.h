@@ -15,6 +15,7 @@ public:
     void add(int d);
     unsigned int count() { return elements_count; }
     void print();
+    int min();
 };
 
 #endif // LLIST_H
