@@ -45,7 +45,7 @@ int LList::min()
     return val;
 }
 
-DLNode* LList::byValue(int val)
+DLNode* LList::searchByValue(int val)
 {
     if (elements_count == 0) return NULL;
     
