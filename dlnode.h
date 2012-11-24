@@ -11,6 +11,7 @@ private:
 public:
     DLNode(int d);
     void print();
+int get() { return data; }
 };
 
 #endif // DLNODE_H

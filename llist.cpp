@@ -50,8 +50,10 @@ DLNode* LList::byValue(int val)
     if (elements_count == 0) return NULL;
     
     DLNode *tmp = first;
-    while (tmp)
+    while (tmp) {
         if (tmp->data == val) return tmp;
+        tmp = tmp->next;
+    }
     
     return NULL;
 }
