@@ -7,13 +7,21 @@
 //
 
 #include <iostream>
+#include "llist.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    // nl
-    std::cout << "Hello, World!\n";
+    LList a;
+    char str0[] = "first elem";
+    char str1[] = "second elem";
+    char str2[] = "третий элемент";
+    
+    a.add(str0);
+    a.add(str1);
+    a.add(str2);
+    
+    a.print();
     return 0;
 }
 
