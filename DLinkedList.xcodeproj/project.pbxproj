@@ -10,7 +10,6 @@
 		0A9A1E721660E932001D9341 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1E711660E932001D9341 /* main.cpp */; };
 		0A9A1E741660E932001D9341 /* DLinkedList.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A9A1E731660E932001D9341 /* DLinkedList.1 */; };
 		0A9A1E7E1660EB27001D9341 /* llist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1E7A1660EB27001D9341 /* llist.cpp */; };
-		0A9A1E7F1660EB27001D9341 /* dlnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1E7B1660EB27001D9341 /* dlnode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,8 +30,6 @@
 		0A9A1E711660E932001D9341 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0A9A1E731660E932001D9341 /* DLinkedList.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DLinkedList.1; sourceTree = "<group>"; };
 		0A9A1E7A1660EB27001D9341 /* llist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = llist.cpp; path = ../llist.cpp; sourceTree = "<group>"; };
-		0A9A1E7B1660EB27001D9341 /* dlnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dlnode.cpp; path = ../dlnode.cpp; sourceTree = "<group>"; };
-		0A9A1E7C1660EB27001D9341 /* dlnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dlnode.h; path = ../dlnode.h; sourceTree = "<group>"; };
 		0A9A1E7D1660EB27001D9341 /* llist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = llist.h; path = ../llist.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,8 +63,6 @@
 		0A9A1E701660E932001D9341 /* DLinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				0A9A1E7C1660EB27001D9341 /* dlnode.h */,
-				0A9A1E7B1660EB27001D9341 /* dlnode.cpp */,
 				0A9A1E7D1660EB27001D9341 /* llist.h */,
 				0A9A1E7A1660EB27001D9341 /* llist.cpp */,
 				0A9A1E711660E932001D9341 /* main.cpp */,
@@ -129,7 +124,6 @@
 			files = (
 				0A9A1E721660E932001D9341 /* main.cpp in Sources */,
 				0A9A1E7E1660EB27001D9341 /* llist.cpp in Sources */,
-				0A9A1E7F1660EB27001D9341 /* dlnode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +216,7 @@
 				0A9A1E791660E932001D9341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
