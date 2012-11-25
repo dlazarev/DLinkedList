@@ -2,58 +2,25 @@
 
 LList::LList()
 {
-    first = NULL;
-    last = NULL;
-    elements_count = 0;
+    next = NULL;
+    data = 0;
 }
 
-void LList::add(int d)
+void LList::add(int a)
 {
-    DLNode *n = new DLNode(d);
 
-    if (elements_count == 0) {
-        first = n;
-    } else {
-        last->next = n;
-        n->previous = last;
-    }
-    last =n;
-    elements_count++;
+    LList *tmp, *b = new LList;
+    tmp = this;
+    while(tmp->next) tmp = tmp->next;
+    tmp->next = b;
+    b->data = a;
 }
 
 void LList::print()
 {
-    DLNode *tmp = first;
-    while (tmp) {
-        tmp->print();
+    LList *tmp = this;
+    while(tmp) {
+        std::cout << tmp->data << std::endl;
         tmp = tmp->next;
-    }
-}
-
-int LList::min()
-{
-    if (elements_count == 0) return -1;
-    
-    int val = first->data;
-    DLNode *tmp = first;
-    
-    while (tmp) {
-        if (tmp->data < val) val = tmp->data;
-        tmp = tmp->next;
-    }
-    
-    return val;
-}
-
-DLNode* LList::searchByValue(int val)
-{
-    if (elements_count == 0) return NULL;
-    
-    DLNode *tmp = first;
-    while (tmp) {
-        if (tmp->data == val) return tmp;
-        tmp = tmp->next;
-    }
-    
-    return NULL;
+    };
 }

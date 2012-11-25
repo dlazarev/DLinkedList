@@ -2,22 +2,17 @@
 #define LLIST_H
 
 #include <iostream>
-#include "dlnode.h"
 
 //
 class LList
 {
 private:
-    unsigned int elements_count;
-    DLNode *first;
-    DLNode *last;
+    int data;
+    LList *next;
 public:
     LList();
-    void add(int d);
-    unsigned int count() { return elements_count; }
+    void add(int);
     void print();
-    int min();
-    DLNode* searchByValue(int);
 };
 
 #endif // LLIST_H
