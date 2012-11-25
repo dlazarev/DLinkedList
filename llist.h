@@ -19,8 +19,8 @@ private:
         int get() { return data; }
     };
     unsigned int elements_count;
-    DLNode *first;
-    DLNode *last;
+    DLNode *head;
+    DLNode *tail;
 public:
     LList();
     void add(int d);
