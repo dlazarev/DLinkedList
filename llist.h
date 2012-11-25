@@ -32,6 +32,7 @@ public:
     int min();
     unsigned int searchByValue(int);
     void sort();
+    unsigned int remove(const int val);
 };
 
 #endif // LLIST_H

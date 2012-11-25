@@ -22,6 +22,10 @@ int main(int argc, const char * argv[])
     li.add(2);
     li.add(7);
     li.add(4);
+    li.add(10);
+    li.add(5);
+    li.add(6);
+    li.add(8);
     
     li.print();
     std::cout << "Sorting..." << std::endl;
@@ -30,7 +34,9 @@ int main(int argc, const char * argv[])
     
     std::cout << "Minimum elements value = " << li.min() << std::endl;
     std::cout << "Numbers elements with value 4: " << li.searchByValue(4) << std::endl;;
-    
+    std::cout << "Delete the elements with value 4..." << std::endl;
+    li.remove(4);
+    li.print();
     return 0;
 }
 

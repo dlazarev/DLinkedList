@@ -89,4 +89,27 @@ void LList::sort() // Bubble method
             if (b->data < a->data) swap(a, b);
 }
 
-
+unsigned int LList::remove(const int val)
+{
+    if (!head) return 0;
+    
+    unsigned int count=0;
+    DLNode *tmp = head;
+    DLNode *cur;
+    
+    while (tmp) {
+        if (tmp->data == val) {
+            if (tmp != head) tmp->previous->next = tmp->next;
+            else head = tmp->next;
+            if (tmp != tail) tmp->next->previous = tmp->previous;
+            else tail = tmp->previous;
+            cur = tmp;
+            tmp = tmp->next;
+            delete cur;
+            count++;
+        }
+        else tmp = tmp->next;
+    }
+    
+    return count;
+}
