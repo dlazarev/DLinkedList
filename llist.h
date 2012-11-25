@@ -11,8 +11,11 @@ private:
     LList *next;
 public:
     LList();
+    LList(int);
     void add(int);
     void print();
+    unsigned int search(const int val);
+    int min();
 };
 
 #endif // LLIST_H

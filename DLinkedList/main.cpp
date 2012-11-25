@@ -12,15 +12,18 @@
 int main(int argc, const char * argv[])
 {
 
-    LList li;
-    int a = 3, b =8, c = 2, d = 9;
+    LList li(77);
     
-    li.add(a);
-    li.add(b);
-    li.add(c);
-    li.add(d);
+    li.add(3);
+    li.add(8);
+    li.add(4);
+    li.add(3);
+    li.add(9);
+    li.add(3);
     
     li.print();
+    std::cout << "Searching elements with value 3... Found: " << li.search(3) << std::endl;
+    std::cout << "Minimum of elements value = " << li.min() << std::endl;
 //    std::cout << "Minimum elements value = " << li.min() << std::endl;
 
 //    std::cout << "Search node with value 9:";

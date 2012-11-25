@@ -6,6 +6,12 @@ LList::LList()
     data = 0;
 }
 
+LList::LList(int a)
+{
+    next = NULL;
+    data = a;
+}
+
 void LList::add(int a)
 {
 
@@ -23,4 +29,27 @@ void LList::print()
         std::cout << tmp->data << std::endl;
         tmp = tmp->next;
     };
+}
+
+unsigned int LList::search(const int val)
+{
+    LList *tmp = this;
+    unsigned int count = 0;
+    
+    while (tmp) {
+        if (tmp->data == val) count++;
+        tmp = tmp->next;
+    }
+    return count;
+}
+
+int LList::min() {
+    LList *tmp = this;
+    int min_val = this->data;
+    
+    while (tmp) {
+        if (tmp->data < min_val) min_val = tmp->data;
+        tmp = tmp->next;
+    }
+    return min_val;
 }
