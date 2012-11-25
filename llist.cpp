@@ -7,6 +7,20 @@ LList::LList()
     elements_count = 0;
 }
 
+LList::~LList()
+{
+    if (!head) return;
+    
+    DLNode *prev;
+    DLNode *cur = tail;
+    
+    while (cur) {
+        prev = cur->previous;
+        delete cur;
+        cur = prev;
+    }
+}
+
 void LList::add(int d)
 {
     DLNode *n = new DLNode(d);
@@ -57,3 +71,22 @@ unsigned int LList::searchByValue(int val)
     }
     return count;
 }
+
+void LList::swap(DLNode *a, DLNode* b)
+{
+    int tmp;
+    tmp = a->data;
+    a->data = b->data;
+    b->data = tmp;
+}
+
+void LList::sort() // Bubble method
+{
+    if (!head) return;
+    
+    for (DLNode *a = head; a->next; a=a->next)
+        for (DLNode *b = tail; b!=a; b=b->previous)
+            if (b->data < a->data) swap(a, b);
+}
+
+
