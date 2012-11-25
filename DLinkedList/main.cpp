@@ -27,9 +27,9 @@ int main(int argc, const char * argv[])
     std::cout << "Minimum elements value = " << li.min() << std::endl;
 
     std::cout << "Search node with value 9:";
-    DLNode *tmp = li.searchByValue(9);
-    if (tmp) std::cout << " success! ->" << tmp->get() << std::endl;
-    else std::cout << "elements not found!" << std::endl;
+//    DLNode *tmp = li.searchByValue(9);
+//    if (tmp) std::cout << " success! ->" << tmp->get() << std::endl;
+//    else std::cout << "elements not found!" << std::endl;
     
     return 0;
 }

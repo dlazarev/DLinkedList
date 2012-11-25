@@ -45,15 +45,7 @@ int LList::min()
     return val;
 }
 
-DLNode* LList::searchByValue(int val)
+unsigned int LList::searchByValue(int val)
 {
-    if (elements_count == 0) return NULL;
-    
-    DLNode *tmp = first;
-    while (tmp) {
-        if (tmp->data == val) return tmp;
-        tmp = tmp->next;
-    }
-    
-    return NULL;
+    return 0;
 }
