@@ -16,6 +16,7 @@ public:
     void print();
     unsigned int search(const int val);
     int min();
+    unsigned int remove(const int val);
 };
 
 #endif // LLIST_H

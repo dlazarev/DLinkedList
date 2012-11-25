@@ -53,3 +53,23 @@ int LList::min() {
     }
     return min_val;
 }
+
+unsigned int LList::remove(const int val)
+{
+    LList *cur = this;
+    LList *prev = NULL;
+    unsigned int count = 0;
+    
+    while (cur) {
+        if (cur->data == val)
+            if (prev) { // cur is point on not first element now
+                prev->next = cur->next;
+                cur = cur->next;
+                delete cur;
+            }
+        prev = cur;
+        cur = cur->next;
+    }
+    return count;
+}
+
